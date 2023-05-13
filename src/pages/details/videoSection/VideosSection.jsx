@@ -22,7 +22,6 @@ const VideosSection = ({ data, loading }) => {
       </div>
     );
   };
-
   return (
     <div className="videosSection">
       <ContentWrapper>
@@ -30,22 +29,24 @@ const VideosSection = ({ data, loading }) => {
         {!loading ? (
           <div className="videos">
             {data?.results?.map((video) => {
-              <div
-                className="videoItem"
-                key={video.id}
-                onClick={() => {
-                  setVideoId(video.key);
-                  setShow(true);
-                }}
-              >
-                <div className="videoThumbnail">
-                  <Img
-                    src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}
-                  />
-                  <PlayIcon />
+              return (
+                <div
+                  className="videoItem"
+                  key={video.id}
+                  onClick={() => {
+                    setVideoId(video.key);
+                    setShow(true);
+                  }}
+                >
+                  <div className="videoThumbnail">
+                    <Img
+                      src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}
+                    />
+                    <PlayIcon />
+                  </div>
+                  <div className="videoTitle">{video.name}</div>
                 </div>
-                <div className="videoTitle">{video.name}</div>
-              </div>;
+              );
             })}
           </div>
         ) : (
