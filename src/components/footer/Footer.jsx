@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="socialIcons">
           <span className="icon">
             <a
-              href="https://github.com/qaiserjofficial"
+              href="https://github.com/qjcoder"
               target="_blank"
               rel="noreferrer"
             >
@@ -32,7 +32,7 @@ const Footer = () => {
           </span>
           <span className="icon">
             <a
-              href="https://www.linkedin.com/in/qaiserjofficial"
+              href="https://www.linkedin.com/in/qjcoder"
               target="_blank"
               rel="noreferrer"
             >
@@ -41,7 +41,7 @@ const Footer = () => {
           </span>
           <span className="icon">
             <a
-              href="https://twitter.com/qaiserjofficial"
+              href="https://twitter.com/qjcoder"
               target="_blank"
               rel="noreferrer"
             >
